@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agora | JGFL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=DM+Sans:opsz,wght@9..40,300;9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main.now-page {
+      min-height: 100vh;
+      padding: 9rem 2rem 7rem;
+      max-width: 600px;
+      margin: 0 auto;
+      animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      opacity: 0;
+    }
+
+    .now-header { margin-bottom: 3.5rem; }
+
+    .now-header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      letter-spacing: -0.025em;
+    }
+
+    .now-updated {
+      font-size: 0.72rem;
+      color: var(--dim);
+      letter-spacing: 0.08em;
+      margin-top: 0.75rem;
+    }
+
+    .now-section {
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .now-section:last-of-type { border-bottom: 1px solid var(--border); }
+
+    .now-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.1rem;
+    }
+
+    .now-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .now-item:last-child { margin-bottom: 0; }
+
+    .now-dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--dim);
+      flex-shrink: 0;
+      margin-top: 0.58em;
+    }
+
+    .now-item span {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.75;
+    }
+
+    .now-item strong {
+      color: var(--star);
+      font-weight: 400;
+    }
+
+    .now-note {
+      margin-top: 2.5rem;
+      font-size: 0.75rem;
+      color: var(--dim);
+      letter-spacing: 0.04em;
+      line-height: 1.7;
+    }
+
+    .now-note a {
+      color: var(--accent);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.18s;
+    }
+    .now-note a:hover { opacity: 1; }
+
+    @media (prefers-reduced-motion: reduce) {
+      main.now-page { animation: none; opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="warp" aria-hidden="true"></canvas>
+
+  <nav>
+    <a href="index.html" class="nav-logo">JGFL</a>
+    <div class="nav-links">
+      <a href="index.html">sobre mim</a>
+      <a href="projects.html">projetos</a>
+      <a href="now.html" class="active">agora</a>
+    </div>
+  </nav>
+
+  <main class="now-page">
+
+    <header class="now-header">
+      <p class="eyebrow"> o que eu estou fazendo atualmente </p>
+      <h1>Agora</h1>
+      <p class="now-updated">atualizado em junho de 2026</p>
+    </header>
+
+    <section class="now-section">
+      <p class="now-label">Estudando</p>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span>programação, sistemas digitais, matemática, introdução à computação, gestão de pessoas</span>
+      </div>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span>Aprofundando em <strong>Python</strong> e <strong>Arduino</strong> nas disciplinas de programação e sistemas digitais.</span>
+      </div>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span>Métodos numéricos: interpolação de Lagrange, integração trapezoidal.</span>
+      </div>
+    </section>
+
+    <section class="now-section">
+      <p class="now-label">Construindo</p>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span><strong>PVAX</strong>  pulseira háptica para gamers surdos. No ESP32, mapeamento de FFT.</span>
+      </div>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span>Este portfólio  adicionando páginas aos poucos, sem pressa.</span>
+      </div>
+    </section>
+
+    <section class="now-section">
+      <p class="now-label">Jogando</p>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span><strong>Kerbal Space Program</strong>  mods demais, aparentemente 32 GB de DDR5 ram não é suficiente.</span>
+      </div>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span><strong>007 First Light</strong>  bom jogo rodou bem na minha rtx 3060 de 12GB mesmo no alto só experienciei 2 ou 3 crashes</span>
+      </div>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span><strong>Forza Horizon 6</strong>  jogo divertido e bem otimizado, mas eu não achei a soundtrack tão boa quanto a do 4 e do 5. </span>
+      </div>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span><strong>Subnautica 2</strong>  muito divertido jogar em coop com amigos, não encontrei muitos problemas e bugs mesmo sendo incompleta e earlyaccess. A história do jogo está legal até agora.</span>
+      </div>
+    </section>
+
+    <section class="now-section">
+      <p class="now-label">Setup</p>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span><strong>Desktop (dual boot Primario: Bazzite, Secundario: Windows 11)</strong> &middot; RTX 3060 &middot; Ryzen 5 8400F &middot; 32 GB DDR5 &middot; 2 SSDs M.2 NVMe (Primario: 2tb, Secundario:500gb) e 1 HDD 1TB</span>
+      </div>
+      <div class="now-item">
+        <span class="now-dot"></span>
+        <span><strong>Laptop (Fedora)</strong> &middot; ASUS Vivobook 15 M1502</span>
+      </div>
+    </section>
+
+    <p class="now-note">
+      Esta é uma <a href="https://nownownow.com/about" target="_blank" rel="noopener">/now page</a>
+       Ideia do Derek Sivers. Um snapshot manual do que estou fazendo neste momento,
+      atualizada de vez em quando.
+    </p>
+
+  </main>
+
+  <footer>
+    <div class="visitor-counter">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span id="visit-count">—</span>&nbsp;visitas
+    </div>
+    <p class="footer-loc"><span id="current-year"></span></p>
+  </footer>
+
+  <script src="warp.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

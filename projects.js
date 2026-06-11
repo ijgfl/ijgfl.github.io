@@ -32,7 +32,7 @@
       '<h3>' + p.name + '</h3>' +
       '<p>' + p.desc + '</p>' +
       '<div class="card-tags">' + tagsHtml + '</div>' +
-      '<a class="card-link" href="' + p.link + '" target="_blank" rel="noopener">ver repositório ↗</a>';
+      '<a class="card-link" href="' + p.link + '" target="_blank" rel="noopener">abrir projeto</a>';
 
     grid.appendChild(card);
   });

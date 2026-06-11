@@ -1,2 +1,2 @@
 # ijgfl.github.io
-site portifolio
+site portfolio

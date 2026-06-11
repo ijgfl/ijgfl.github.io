@@ -6,6 +6,7 @@
       name: 'PVAX',
       desc: 'Pulseira para gamers surdos com feedback háptico baseado em frequência de áudio. com ESP32 e mapeamento FFT em tempo real.',
       tags: ['ESP32', 'Arduino', 'C++', 'Projeto 1'],
+      link: 'https://sites.google.com/cesar.school/projetos1-g7/home',
     },
     {
       name: 'Jardin',
